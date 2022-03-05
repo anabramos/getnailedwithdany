@@ -10,6 +10,10 @@ h1, h2, .logo {
     font-family: 'Fredoka One', sans-serif;
 }
 
+p {
+    font-weight: 800;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -70,4 +74,22 @@ i:hover {
 
 .nav-link:hover {
     color: inherit;
+}
+
+/* Homepage */
+
+.hero-image {
+    background: url(../images/hero-image.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Buttons */
+
+button {
+    background-color: #D8E2DC;
+    font-weight: 800;
+    border-radius: 10px;
 }
