@@ -11,44 +11,63 @@ h1, h2, .logo {
 }
 
 a {
-    color: black;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration:underline #9D8189;
+    color: inherit;
+}
+
+i:hover {
+    color:#F4ACB7;
+}
+
+.height-90vh {
+    /* This pushes the footer down in html documents with little code*/
+    min-height: 90vh;
 }
 
 /* Background Colors */
 
 .fade-green {
     background-color: #D8E2DC;
-    color: black;
 }
 
 .fade-yellow {
     background-color: #FFE5D9;
-    color: black;
 }
 
 .fade-pink {
     background-color: #FFCAD4;
-    color: black;
 }
 
 .fade-red {
     background-color: #F4ACB7;
-    color: black;
 }
 
 .fade-brown {
     background-color: #9D8189;
+}
+
+/* Text Colors */
+
+.text-white {
     color: white;
+}
+
+.text-black {
+    color: black;
 }
 
 /* Navigation Bar */
 
 .nav-link {
-    color: black;
+    color: inherit;
     font-weight: 600;
 }
 
 .nav-link:hover {
-    color: black;
-    text-decoration:underline #9D8189;
+    color: inherit;
 }
