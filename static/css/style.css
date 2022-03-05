@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@200&display=swap');
 
+
+/* General Styling*/
 body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, .logo {
     font-family: 'Fredoka One', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+/* Background Colors */
+
+.fade-green {
+    background-color: #D8E2DC;
+    color: black;
+}
+
+.fade-yellow {
+    background-color: #FFE5D9;
+    color: black;
+}
+
+.fade-pink {
+    background-color: #FFCAD4;
+    color: black;
+}
+
+.fade-red {
+    background-color: #F4ACB7;
+    color: black;
+}
+
+.fade-brown {
+    background-color: #9D8189;
+    color: white;
+}
+
+/* Navigation Bar */
+
+.nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: black;
+    text-decoration:underline #9D8189;
 }
