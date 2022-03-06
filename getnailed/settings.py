@@ -15,7 +15,7 @@ import os
 import dj_database_url
 
 if os.path.isfile("env.py"):
-   import env
+    import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'website',
     'booking',
     'services',
@@ -142,7 +143,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
 
 
 # Default primary key field type

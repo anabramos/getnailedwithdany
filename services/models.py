@@ -12,6 +12,6 @@ class Service(models.Model):
 
     class Meta:
         ordering = ['service_title']
-    
+
     def __str__(self):
         return self.service_title
