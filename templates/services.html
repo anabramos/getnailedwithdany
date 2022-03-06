@@ -4,6 +4,34 @@
 
 {% block content %}
 
-<p>test</p>
+    <!-- Services section -->
+    <section class="container-fluid text-center">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h2 class="pb-3">Our Services and Treatments</h2>
+                <div class="row">
+                    {% for service in services %}
+                        <div class="col-6 p-2">
+                            <h5><strong>{{ service.service_title }}</strong></h5>
+                            <p class="text-small"><em>{{ service.service_description }}</em></p>
+                        </div>
+                        <div class="col-6">
+                            <p><strong>€ {{ service.service_price }}</strong></p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </section>
+
+    <!-- Contact us banner -->
+    <div class="shadow-lg fade-yellow">
+        <div class="container contact-us-banner text-center p-2">
+            <p>Questions?</p>
+            <p><a href="#">>> Get in touch with us here! <<</a></p>
+        </div>
+    </div>
 
 {% endblock %}

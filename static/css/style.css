@@ -94,3 +94,12 @@ button {
     font-weight: 800;
     border-radius: 10px;
 }
+
+/* Services */
+
+img {
+    width: auto;
+    max-height: 600px;
+    background-size: cover;
+    overflow: hidden;
+}
