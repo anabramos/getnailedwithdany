@@ -12,5 +12,7 @@ class Customer(models.Model):
     customer_email = models.EmailField(max_length=254, default="", unique=True)
 
     def __str__(self):
-        # return customer name
+        """
+        Return customer name
+        """
         return self.customer_name

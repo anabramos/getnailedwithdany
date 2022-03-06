@@ -13,6 +13,9 @@ class Service(models.Model):
     service_price = models.FloatField()
 
     class Meta:
+        """
+        Order Services by title
+        """
         ordering = ['service_title']
 
     def __str__(self):
