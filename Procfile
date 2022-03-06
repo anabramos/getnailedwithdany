@@ -1,1 +1,1 @@
-web: gunicorn getnailed.wsgi:application
+web: gunicorn getnailed.wsgi
