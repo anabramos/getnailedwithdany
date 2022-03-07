@@ -118,3 +118,11 @@ img {
         font-size: 1.0rem;
     }
 }
+
+
+/* For screen sizes from 480px wide or smaller*/
+@media screen and (max-width: 480px) {
+    .responsive-font {
+        font-size: 0.8rem;
+    }
+}
