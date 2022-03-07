@@ -15,7 +15,6 @@ Using core Design Thinking methods and Agile practices principles the strategy f
 ### Personas
 
 
-
 #### Persona 1 (Business Owner)
 
 <img src="static/images/readme/dany.jpg" style="width: 8%" />
@@ -31,7 +30,6 @@ Danielle is currently trying to grow her business but the lack of English knowle
 - Danielle has a good number of fixed Brazilian customers
 - Danielle works from 9am to 6pm with short breaks in between clients
 - Danielle’s work is popular on Instagram and social media
-
 
 
 #### Persona 2 (Client)
@@ -56,4 +54,24 @@ I am a nail designer trying to expand my business to a diverse group of clients 
 
 - Problem Statement: Louise Smith
 I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons because I am a mother with unpredictable working hours  which makes me feel like if I don’t get to get my hair and nails don’t I won’t be taken seriously in my job. 
+
+
+### User Stories
+1.	As the business owner I can log in so that I can access the site's backend.
+2.	As the business owner I can accept or cancel any booking requests so that I can manage last minute changes to my schedule.
+3.	As the business owner I can create, remove, update or delete the services provided from the website list so that the website always translates the services I have available at different moments.
+4.	As the business owner I can update the price of services from the website list so that I can keep the website up to date to accurately reflect the market prices.
+5.	As the business owner I can prevent guests from requesting more than one time slot per week so that I can efficiently manage customer expectations and schedule.
+6.	As the business owner I can see a profile picture of each client when I receive a booking request so that I know who to expect each day at my house.
+7.	As a client I can navigate the website intuitively so that I can find the information I need.
+8.	As a client I can get key information about services provided and prices from the landing page so that I can decide based on that if I want to register for an account.
+9.	As a client I can see the Instagram account of the service provider on the website so that I can check the quality of her work before registering for an account.
+10.	As a client I can send any questions or concerns to the service provider through the website so that I can receive any additional information I might need.
+11.	As a client I can register or log in so that I can make booking requests.
+12.	As a client I can easily see when I am logged in or logged out so that I know if I need to act upon that based on what I would like to do in the website.
+13.	As a client I can send a request for a booking time so that I can make an appointment to get my nails done.
+14.	As a client I can delete or change an existing booking request so that my booking requests can respond to any last minute change I might have in my schedule
+15.	As a client I can edit my personal details so that these are up to date in case I need to be contacted by the service provider.
+
+
 
