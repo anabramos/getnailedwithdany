@@ -103,3 +103,18 @@ img {
     background-size: cover;
     overflow: hidden;
 }
+
+/* For screen sizes from 905px wide or smaller*/
+@media screen and (max-width: 905px){
+    .responsive-font {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* For screen sizes from 768px wide or smaller*/
+@media screen and (max-width: 768px){
+    .responsive-font {
+        font-size: 1.0rem;
+    }
+}

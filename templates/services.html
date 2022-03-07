@@ -5,29 +5,29 @@
 {% block content %}
 
     <!-- Services section -->
-    <section class="container-fluid text-center">
+    <section class="container-fluid">
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <h2 class="pb-3">Our Services and Treatments</h2>
-                <div class="row">
+            <div class="col-lg-3 col-sm-2"></div>
+            <div class="col-lg-6 col-sm-8">
+                <h2 class="pb-3 responsive-font text-center">Our Services and Treatments</h2>
+                <div class="row responsive-font text-left">
                     {% for service in services %}
-                        <div class="col-6 p-2">
-                            <h5><strong>{{ service.service_title }}</strong></h5>
+                        <div class="col-8 p-2">
+                            <p><u>{{ service.service_title }}</u></p>
                             <p class="text-small"><em>{{ service.service_description }}</em></p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                             <p><strong>€ {{ service.service_price }}</strong></p>
                         </div>
                     {% endfor %}
                 </div>
             </div>
-            <div class="col-3"></div>
+            <div class="col-lg-3 col-sm-2"></div>
         </div>
     </section>
 
     <!-- Contact us banner -->
-    <div class="shadow-lg fade-yellow">
+    <div class="shadow-lg fade-yellow responsive-font">
         <div class="container contact-us-banner text-center p-2">
             <p>Questions?</p>
             <p><a href="#">>> Get in touch with us here! <<</a></p>
