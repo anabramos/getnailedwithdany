@@ -76,16 +76,6 @@ i:hover {
     color: inherit;
 }
 
-/* Homepage */
-
-.hero-image {
-    background: url(../images/hero-image.jpg);
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    overflow: hidden;
-}
-
 
 /* Buttons */
 
