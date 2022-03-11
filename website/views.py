@@ -5,7 +5,9 @@ from .forms import ContactUsForm
 # Create your views here.
 
 def homepage(request):
-    # Return homepage
+    """
+    Return homepage
+    """
     return render(request, 'homepage.html')
 
 

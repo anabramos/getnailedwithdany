@@ -45,8 +45,12 @@ class Appointment(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     appointment_date = models.DateField()
-    appointment_time = models.CharField(max_length=10, choices=time_options, default='00:00')
-    status = models.CharField(max_length=50, choices=status_options, default="pending")
+    appointment_time = models.CharField(max_length=10,
+                                        choices=time_options,
+                                        default='00:00')
+    status = models.CharField(max_length=50,
+                              choices=status_options,
+                              default="pending")
 
     class Meta:
         """
