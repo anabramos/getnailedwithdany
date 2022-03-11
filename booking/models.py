@@ -13,7 +13,7 @@ time_options = (
     ("17:00", "17:00"),
 )
 
-status_options =(
+status_options = (
     ("pending", "pending"),
     ("confirmed", "confirmed"),
     ("denied", "denied"),
