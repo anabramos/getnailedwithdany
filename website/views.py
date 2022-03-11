@@ -17,3 +17,9 @@ def contact_us(request):
     """
     contact_form = ContactUsForm()
     return render(request, 'contact-us.html', {'contact_form': contact_form})
+
+def my_account(request):
+    """
+    Return My Account page to User
+    """
+    return render(request, 'my-account.html')
