@@ -14,4 +14,4 @@ def contact_us(request):
     Return Contact Us form rendered in a new page
     """
     contact_form = ContactUsForm()
-    return render(request, 'contact_us.html', {'contact_form': contact_form})
+    return render(request, 'contact-us.html', {'contact_form': contact_form})
