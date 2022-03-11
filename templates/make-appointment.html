@@ -7,12 +7,23 @@
     <!-- Contact Us Form -->
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mt-3 offset-md-2">
-                {% csrf_token %}
-                {{ appointment_form.as_p }}
-            </div>
+            {% if user.is_authenticated %}
+                <div class="col-md-8 mt-3 offset-md-2">
+                    <h2>Make your Appointment</h2>
+                    {% csrf_token %}
+                    {{ appointment_form.as_p }}
+                </div>
+                <button type="submit" class="button mt-4 text-center submit-button">Send request!</button>
+            {% else %}
+                <div class="col-md-8 mt-3 offset-md-2">
+                    <h2>Oops...</h2>
+                    <p>If you want to make an appointment, please <a href="{{ login_url }}"><u>login</u></a>, or <a href="{{ login_url }}"><u>register</u></a> for an account first.</p>
+                </div>
+            {% endif %}
         </div>
+    
     </div>
+
 
 
 
