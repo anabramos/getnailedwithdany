@@ -76,6 +76,14 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
+# Login feature was not validating user e-mail and passwords,
+# Adding the variable below fixed the problem
+# I got this from Sarah Hagstrom's django-allauth tutorial
+AUTHENTICATION_BACKENDS = (
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend"
+)
+
 ROOT_URLCONF = 'getnailed.urls'
 
 TEMPLATES = [
