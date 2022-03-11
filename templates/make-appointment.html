@@ -9,7 +9,7 @@
         <div class="row">
             {% if user.is_authenticated %}
                 <div class="col-md-8 mt-3 offset-md-2">
-                    <h2>Make your Appointment</h2>
+                    <h2>Hi {{ user.username }}, you can make your appointment below</h2>
                     {% csrf_token %}
                     {{ appointment_form.as_p }}
                 </div>

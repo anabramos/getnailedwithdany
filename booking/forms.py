@@ -11,5 +11,6 @@ class AppointmentForm(forms.ModelForm):
         Renders specific fields from the Appointment Module into the Form
         """
         model = Appointment
-        fields = ['customer', 'service',
-                  'appointment_date', 'appointment_time']
+        fields = ['service',
+                  'appointment_date',
+                  'appointment_time']
