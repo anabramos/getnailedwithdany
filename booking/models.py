@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from services.models import Service
 
 time_options = (
@@ -26,15 +27,11 @@ class Customer(models.Model):
     """
     Model for customer details
     """
-    customer_id = models.AutoField(primary_key=True)
-    customer_name = models.CharField(max_length=50)
-    customer_email = models.EmailField(max_length=254, default="", unique=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
+    name = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
-        """
-        Return customer name
-        """
-        return self.customer_name
+        return str(self.name)
 
 
 class Appointment(models.Model):
