@@ -9,10 +9,11 @@
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
                 <h2>My Account Details:</h2>
-                <p>Name: {{user.first_name}} {{user.last_name}}</p>
-                <p>Username: {{user.username}}</p>
-                <p>Email: {{user.email}}</p>
-                <p>Last logged in on: {{user.last_login}}</p>
+                <p>Name: <span class="fade-yellow">{{user.first_name}} {{user.last_name}}</span></p>
+                <p>Username: <span class="fade-yellow">{{user.username}}</span></p>
+                <p>Email: <span class="fade-yellow">{{user.email}}</span></p>
+                <p>Last logged in on: <span class="fade-yellow">{{user.last_login}}</span></p>
+                <button>Change Account Details</button>
             </div>
         </div>
         <div class="row">
