@@ -81,6 +81,13 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
+# Allows to extens the allauth SignUp form
+# and create custom fields
+# I got this from GeeksforGeeks Tutorial
+ACCOUNT_FORMS = {
+    'signup': 'booking.forms.CustomSignupForm',
+}
+
 # Login feature was not validating user e-mail and passwords,
 # Adding the variable below fixed the problem
 # I got this from Sarah Hagstrom's django-allauth tutorial
