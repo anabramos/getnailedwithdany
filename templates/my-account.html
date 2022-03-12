@@ -9,10 +9,10 @@
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
                 <h2>My Account Details:</h2>
-                <p>Name:</p>
-                <p>Username:</p>
-                <p>Email:</p>
-                <p>Last updated on:</p>
+                <p>Name: {{user.first_name}} {{user.last_name}}</p>
+                <p>Username: {{user.username}}</p>
+                <p>Email: {{user.email}}</p>
+                <p>Last logged in on: {{user.last_login}}</p>
             </div>
         </div>
         <div class="row">
