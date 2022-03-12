@@ -18,7 +18,7 @@ def contact_us(request):
     """
     Return Contact Us form rendered in a new page
     """
-    # submitted = False
+    message_sent = False
     if request.method == "POST":
         contact_form = ContactUsForm(request.POST)
         if contact_form.is_valid():
@@ -31,12 +31,17 @@ def contact_us(request):
                       message_data['message'],
                       message_data['email'],
                       recipient_list)
-  
-            return HttpResponseRedirect('/contact-us')
+
+            # Thanks for the tutoring team to helping me with setting up
+            # This get request redirect from posting the form
+            return HttpResponseRedirect('/contact-us?message_sent=True')
     else:
         contact_form = ContactUsForm()
+        if 'message_sent' in request.GET:
+            message_sent = True
 
-    return render(request, 'contact-us.html', {'contact_form': contact_form})
+    return render(request, 'contact-us.html', {'contact_form': contact_form,
+                                               'message_sent': message_sent})
 
 
 def my_account(request):

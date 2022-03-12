@@ -8,15 +8,22 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
-                <h2>Send us a message!</h2>
-                <!-- Contact Us Form -->
-                <form method="POST">
-                    <table>
-                        {% csrf_token %}
-                        {{ contact_form.as_table }}
-                    </table>
-                    <button type="submit">Send!</button>
-                </form>
+                {% if message_sent %}
+
+                    <h2>Thank you!</h2>
+                    <p> Your message was sent successfully</p>
+
+                {% else %}
+                    <h2>Send us a message!</h2>
+                    <!-- Contact Us Form -->
+                    <form method="POST">
+                        <table>
+                            {% csrf_token %}
+                            {{ contact_form.as_table }}
+                        </table>
+                        <button type="submit">Send!</button>
+                    </form>
+                {% endif %}
             </div>
         </div>
     </div>
