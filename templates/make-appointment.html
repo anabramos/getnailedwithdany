@@ -10,14 +10,18 @@
             {% if user.is_authenticated %}
                 <div class="col-md-8 mt-3 offset-md-2">
                     <h2>Hi {{ user.username }}, you can make your appointment below</h2>
-                    {% csrf_token %}
-                    {{ appointment_form.as_p }}
+                    <form>
+                        <table>
+                            {% csrf_token %}
+                            {{ appointment_form.as_table }}
+                        </table>
+                        <button type="submit" class="button mt-4 text-center submit-button">Send request!</button>
+                    </form>
                 </div>
-                <button type="submit" class="button mt-4 text-center submit-button">Send request!</button>
             {% else %}
                 <div class="col-md-8 mt-3 offset-md-2">
                     <h2>Oops...</h2>
-                    <p>If you want to make an appointment, please <a href="{{ login_url }}"><u>login</u></a>, or <a href="{{ login_url }}"><u>register</u></a> for an account first.</p>
+                    <p>If you want to make an appointment, please <a href="{% url 'account_login' %}"><u>login</u></a>, or <a href="{% url 'account_signup' %}"><u>register</u></a> for an account first.</p>
                 </div>
             {% endif %}
         </div>

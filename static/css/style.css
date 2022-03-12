@@ -85,14 +85,6 @@ button {
     border-radius: 10px;
 }
 
-/* Services */
-
-img {
-    width: auto;
-    max-height: 600px;
-    background-size: cover;
-    overflow: hidden;
-}
 
 /* For screen sizes from 905px wide or smaller*/
 @media screen and (max-width: 905px){
