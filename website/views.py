@@ -18,6 +18,7 @@ def contact_us(request):
     """
     Return Contact Us form rendered in a new page
     """
+    # Variable asserts if contact form has been successfully sent
     message_sent = False
     if request.method == "POST":
         contact_form = ContactUsForm(request.POST)
@@ -26,6 +27,7 @@ def contact_us(request):
             # Stores form data in variable as dictionary
             message_data = contact_form.cleaned_data
 
+            # Send e-mail with form data after validation
             recipient_list = [settings.EMAIL_HOST_USER]
             send_mail(message_data['subject'],
                       message_data['message'],
