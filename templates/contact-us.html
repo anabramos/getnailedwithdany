@@ -4,12 +4,19 @@
 
 {% block content %}
    
-    <!-- Contact Us Form -->
+    
     <div class="container">
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
-                {% csrf_token %}
-                {{ contact_form.as_p }}
+                <h2>Send us a message!</h2>
+                <!-- Contact Us Form -->
+                <form method="POST">
+                    <table>
+                        {% csrf_token %}
+                        {{ contact_form.as_table }}
+                    </table>
+                    <button type="submit">Send!</button>
+                </form>
             </div>
         </div>
     </div>
