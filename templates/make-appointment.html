@@ -10,8 +10,16 @@
             {% if user.is_authenticated %}
                 <div class="col-md-8 mt-3 offset-md-2">
                     <h2>Hi {{ user.first_name }}, you can make your appointment below</h2>
-                    <form>
+                    <form method="POST">
                         <table>
+                            <tr>
+                                <th>Client:</th>
+                                <td><strong>{{ user.first_name }} {{ user.last_name }}</strong></td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td><strong>{{ user.email }}</strong></td>
+                            </tr>
                             {% csrf_token %}
                             {{ appointment_form.as_table }}
                         </table>
