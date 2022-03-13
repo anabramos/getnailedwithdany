@@ -51,11 +51,11 @@ Louise lives a busy life as a Real Estate Agent and mother. Her job requires her
 
 - Problem Statement: Danielle Maya (Business Owner)	
 
-I am a nail designer trying to expand my business to a diverse group of clients but I don’t have the time to answer to all of the booking request messages and calls I get on a day because I work from 9am to 6pm with limited breaks in between which makes me feel like I can’t give the needed attention to my clients so my business will never grow.	
+    I am a nail designer trying to expand my business to a diverse group of clients but I don’t have the time to answer to all of the booking request messages and calls I get on a day because I work from 9am to 6pm with limited breaks in between which makes me feel like I can’t give the needed attention to my clients so my business will never grow.	
 
 - Problem Statement: Louise Smith
 
-I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons to check if they have availibility because I am a mother with unpredictable working hours which makes me feel like if I don’t get to easily make appointments for getting my nails done, I will have to go to work with un-done nails and I won’t be taken seriously in my job. 
+    I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons to check if they have availibility because I am a mother with unpredictable working hours which makes me feel like if I don’t get to easily make appointments for getting my nails done, I will have to go to work with un-done nails and I won’t be taken seriously in my job. 
 
 
 ### User Stories
@@ -81,8 +81,22 @@ All user stories are documented with their respective acceptance criteria, story
 ### Agile Practices
 
 #### Wireframes
-- All wireframes were designed with Balsamiq tool. 
+- All wireframes were designed with Balsamiq tool. These can be found [here].(https://github.com/anabramos/getnailedwithdany/tree/main/static/documents/wireframes) Final web application will differ slightly from wireframes as it will utlize more similar structures between different pages for better visual appeal and user experience.
 
 #### Product Backlog & Project Board
 - I created my product backlog using [my Github Milestones](https://github.com/anabramos/getnailedwithdany/milestones), dividing story points more or less euqaly per iteration. This however did not translate the build up order of the project, as I had overestimated how some tasks and features are dependant from others to being build.  
 - For information radiators I have made use of [my Github Projects](https://github.com/anabramos/getnailedwithdany/projects/1)
+
+### Scope & Structure
+
+In response to the problem statements and user stories attributed to business owner and clients, the website and its features are structured as following:
+
+3 Custom Django apps:
+1. Website
+    Concerns the design of a Front-End web application that meets acessibility guidelines and provides a set for responsive user interaction via its homepage, navbar and navigation links. It contains a homepage with information about the website and navigation links that will take the client to different website features. Lastly, it presents a contact form so that (potential) clients send a message to business owner.
+2. Services
+    Concerns the display of all services provided by the business owner, including prices. These are directly linked to the database and can be updated at aytime by admin users. Changes on the database are also immediatelly translated to the Front-End of the website.
+3. Booking
+    Concerns the ability of clients to make and manage their appointments, including modifying and cancelling(delete) existing appointments. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account before making an appointment. 
+
+This web application also utilizes built-in django applications, frameworks and libraries to compliment the above mentioned structure and features. 
