@@ -81,7 +81,7 @@ All user stories are documented with their respective acceptance criteria, story
 ### Agile Practices
 
 #### Wireframes
-- All wireframes were designed with Balsamiq tool. These can be found [here].(https://github.com/anabramos/getnailedwithdany/tree/main/static/documents/wireframes) Final web application will differ slightly from wireframes as it will utlize more similar structures between different pages for better visual appeal and user experience.
+- All wireframes were designed with Balsamiq tool. These can be found [here](https://github.com/anabramos/getnailedwithdany/tree/main/static/documents/wireframes). Final web application will differ slightly from wireframes as it will utlize more similar structures between different pages for better visual appeal and user experience.
 
 #### Product Backlog & Project Board
 - I created my product backlog using [my Github Milestones](https://github.com/anabramos/getnailedwithdany/milestones), dividing story points more or less euqaly per iteration. This however did not translate the build up order of the project, as I had overestimated how some tasks and features are dependant from others to being build.  
@@ -100,3 +100,13 @@ In response to the problem statements and user stories attributed to business ow
     Concerns the ability of clients to make and manage their appointments, including modifying and cancelling(delete) existing appointments. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account before making an appointment. 
 
 This web application also utilizes built-in django applications, frameworks and libraries to compliment the above mentioned structure and features. 
+
+### Database Structure
+
+The Database for this web application has undergone changes as the project developed. This is due to the fact that some of my initial planned custom models were being repetitive of already existing built-in Django Models. Initially the plan was to take 3 custom models: 'Service', 'Customer' and 'Appointment' (see Relationship Diagram Img.1). However, after developing the user account feature with allauth app, I realized that my custom Customer Model was not only very similar to allauh's User Model, but also created certain complications in terms of connecting the two. To optimize my time and my code writing, I have returned to the drawing board for rethinking my database structure. The final structure that concerns this web application uses 2 custom models: 'Service' and 'Appointment' and related to the User Model from django allauth (see Relationship Diagram Img.2).
+
+<img src="static/documents/diagrams/diagram1.png" style="width: 40%" />
+<img src="static/documents/diagrams/diagram2.png" style="width: 40%" />
+
+
+
