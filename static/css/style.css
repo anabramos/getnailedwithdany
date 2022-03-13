@@ -28,8 +28,9 @@ i:hover {
     color:#F4ACB7;
 }
 
-.height-90vh {
     /* This pushes the footer down in html documents with little code*/
+.height-90vh {
+    
     min-height: 90vh;
 }
 
@@ -83,6 +84,12 @@ button {
     background-color: #D8E2DC;
     font-weight: 800;
     border-radius: 10px;
+}
+
+/* Appointment Cards */
+
+.card {
+    display: inline;
 }
 
 
