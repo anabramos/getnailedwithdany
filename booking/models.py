@@ -19,7 +19,7 @@ class Appointment(models.Model):
     appointment_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
-    timestamp = models.DateField(null=False, blank=False, unique=True)
+    timestamp = models.DateTimeField(null=False, blank=False, unique=True)
     status = models.CharField(max_length=50,
                               choices=status_options,
                               default="pending")

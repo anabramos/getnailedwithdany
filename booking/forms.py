@@ -40,7 +40,7 @@ class AppointmentForm(forms.ModelForm):
     """
     class Meta:
         """
-        Renders specific fields from the Appointment Module into the Form
+        Renders selected fields from the Appointment Module into the Form
         """
         model = Appointment
         fields = ['service',
