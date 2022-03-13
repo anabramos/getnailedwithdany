@@ -11,7 +11,9 @@ def make_appointment(request):
     if request.method == "POST":
         appointment_form = AppointmentForm(request.POST)
         if appointment_form.is_valid():
-            appointment_form.save()
+            appointment = appointment_form.save(commit=False)
+            appointment.user = request.user
+            appointment.save()
 
     appointment_form = AppointmentForm()
     return render(request,
