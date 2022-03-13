@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.views import generic
 from django.contrib.auth.models import User
 from .forms import AppointmentForm
 from .models import Appointment
@@ -28,5 +27,6 @@ def my_account(request):
     """
     Return My Account page to User
     """
-    my_appointments = Appointment.objects.all()
+    current_user = request.user
+    my_appointments = Appointment.objects.filter(user=current_user)
     return render(request, 'my-account.html', {'my_appointments': my_appointments})
