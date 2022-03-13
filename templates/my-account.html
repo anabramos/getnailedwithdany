@@ -27,8 +27,12 @@
                             <h6 class="card-subtitle mb-2 text-muted">{{ appointment.timestamp }}</h6>
                             <p class="card-text">{{ appointment.service.service_description }}</p>
                             <p class="card-text">status: {{ appointment.status }}</p>
-                            <a href="/edit/{{ appointment.appointment_id }}"><button>Modify</button></a>
-                            <a href="#" class="card-link"><u>Cancel</u></a>
+                            <a href="/edit/{{ appointment.appointment_id }}">
+                                <button>Modify</button>
+                            </a>
+                            <a href="/delete/{{ appointment.appointment_id }}">
+                                <button>Cancel</button>'
+                            </a>
                         </div>
                     </div>
                 {% endfor %}
