@@ -1,12 +1,15 @@
 from django.shortcuts import render
+from django.views import generic
+from django.contrib.auth.models import User
 from .forms import AppointmentForm
+from .models import Appointment
 
 # Create your views here.
 
 
 def make_appointment(request):
     """
-    Return Make Appointment form rendered in new page
+    Make new appointment form and post to database
     """
     if request.method == "POST":
         appointment_form = AppointmentForm(request.POST)
@@ -19,3 +22,11 @@ def make_appointment(request):
     return render(request,
                   'make-appointment.html',
                   {'appointment_form': appointment_form})
+
+
+def my_account(request):
+    """
+    Return My Account page to User
+    """
+    my_appointments = Appointment.objects.all()
+    return render(request, 'my-account.html', {'my_appointments': my_appointments})

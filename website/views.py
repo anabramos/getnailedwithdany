@@ -45,9 +45,3 @@ def contact_us(request):
     return render(request, 'contact-us.html', {'contact_form': contact_form,
                                                'message_sent': message_sent})
 
-
-def my_account(request):
-    """
-    Return My Account page to User
-    """
-    return render(request, 'my-account.html')
