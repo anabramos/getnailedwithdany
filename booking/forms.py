@@ -31,7 +31,7 @@ class DateInput(forms.DateInput):
     """
     Custom widget for datefields in form
     """
-    input_type = 'date'
+    input_type = 'datetime-local'
 
 
 class AppointmentForm(forms.ModelForm):
@@ -44,8 +44,7 @@ class AppointmentForm(forms.ModelForm):
         """
         model = Appointment
         fields = ['service',
-                  'appointment_date',
-                  'appointment_time']
+                  'timestamp']
         widgets = {
-            'appointment_date': DateInput()
+            'timestamp': DateInput()
         }
