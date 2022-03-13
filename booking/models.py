@@ -2,17 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from services.models import Service
 
-time_options = (
-    ("09:00", "09:00"),
-    ("10:00", "10:00"),
-    ("11:00", "11:00"),
-    ("12:00", "12:00"),
-    ("13:00", "13:00"),
-    ("14:00", "14:00"),
-    ("15:00", "15:00"),
-    ("16:00", "16:00"),
-    ("17:00", "17:00"),
-)
 
 status_options = (
     ("pending", "pending"),

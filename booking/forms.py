@@ -2,11 +2,12 @@ from django import forms
 from allauth.account.forms import SignupForm
 from .models import Appointment
 
-# This feature I took from GeeksforGeeks tutorial
-# Python | Extending and customizing django-allauth
+
 class CustomSignupForm(SignupForm):
     """
     Add custom field to Allauth SignupForm
+    This feature I took from GeeksforGeeks tutorial
+    Python: Extending and customizing django-allauth
     """
     first_name = forms.CharField(max_length=20, label='First Name',
                                  widget=forms.TextInput
@@ -14,7 +15,6 @@ class CustomSignupForm(SignupForm):
     last_name = forms.CharField(max_length=20, label='Last Name',
                                 widget=forms.TextInput
                                 (attrs={'placeholder': 'Last Name'}))
-
 
     def save(self, request):
         """
