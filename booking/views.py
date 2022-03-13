@@ -42,6 +42,7 @@ def change_appointment(request, appointment_appointment_id):
     if request.method == "POST":
         appointment_form = AppointmentForm(request.POST, instance=appointment)
         if appointment_form.is_valid():
+            appointment.status = 'pending'
             appointment = appointment_form.save(commit=False)
             appointment.user = request.user
             appointment.save()
