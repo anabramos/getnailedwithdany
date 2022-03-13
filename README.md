@@ -49,14 +49,19 @@ Louise lives a busy life as a Real Estate Agent and mother. Her job requires her
 
 ### Problem Statements
 
-- Problem Statement: Danielle Maya	
-I am a nail designer trying to expand my business to a diverse group of clients but I don’t have the time to answer to all of the booking request messages I get on a day because I work from 9am to 6pm with limited breaks in between which makes me feel like I can’t give the needed attention to my clients so my business will never grow.	
+- Problem Statement: Danielle Maya (Business Owner)	
+
+I am a nail designer trying to expand my business to a diverse group of clients but I don’t have the time to answer to all of the booking request messages and calls I get on a day because I work from 9am to 6pm with limited breaks in between which makes me feel like I can’t give the needed attention to my clients so my business will never grow.	
 
 - Problem Statement: Louise Smith
-I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons because I am a mother with unpredictable working hours  which makes me feel like if I don’t get to get my hair and nails don’t I won’t be taken seriously in my job. 
+
+I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons to check if they have availibility because I am a mother with unpredictable working hours which makes me feel like if I don’t get to easily make appointments for getting my nails done, I will have to go to work with un-done nails and I won’t be taken seriously in my job. 
 
 
 ### User Stories
+
+All user stories are documented with their respective acceptance criteria, story points and MoSCoW prioritization on [my Github Issues](https://github.com/anabramos/getnailedwithdany/issues)
+
 1.	As the business owner I can log in so that I can access the site's backend.
 2.	As the business owner I can accept or cancel any booking requests so that I can manage last minute changes to my schedule.
 3.	As the business owner I can create, remove, update or delete the services provided from the website list so that the website always translates the services I have available at different moments.
@@ -73,5 +78,11 @@ I am a real estate agent trying to book easy and flexible beauty services for my
 14.	As a client I can delete or change an existing booking request so that my booking requests can respond to any last minute change I might have in my schedule
 15.	As a client I can edit my personal details so that these are up to date in case I need to be contacted by the service provider.
 
+### Agile Practices
 
+#### Wireframes
+- All wireframes were designed with Balsamiq tool. 
 
+#### Product Backlog & Project Board
+- I created my product backlog using [my Github Milestones](https://github.com/anabramos/getnailedwithdany/milestones), dividing story points more or less euqaly per iteration. This however did not translate the build up order of the project, as I had overestimated how some tasks and features are dependant from others to being build.  
+- For information radiators I have made use of [my Github Projects](https://github.com/anabramos/getnailedwithdany/projects/1)
