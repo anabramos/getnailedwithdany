@@ -13,7 +13,6 @@
                 <p>Username: <span class="fade-yellow">{{user.username}}</span></p>
                 <p>Email: <span class="fade-yellow">{{user.email}}</span></p>
                 <p>Last logged in on: <span class="fade-yellow">{{user.last_login}}</span></p>
-                <button>Change Account Details</button>
             </div>
         </div>
         <div class="row">
@@ -21,10 +20,10 @@
                 <!-- My Appointment Details -->
                 <h2>My Appointments:</h2>
                 {% for appointment in my_appointments %}
-                    <div class="card"                                     >
-                        <div class=" fade-yellow card-body">
+                    <div>
+                        <div class="fade-yellow card-body">
                             <h5 class="card-title">{{ appointment.service }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ appointment.timestamp }}</h6>
+                            <h6 class="card-subtitle mb-2">{{ appointment.timestamp }}</h6>
                             <p class="card-text">{{ appointment.service.service_description }}</p>
                             <p class="card-text">status: {{ appointment.status }}</p>
                             <a href="/edit/{{ appointment.appointment_id }}">

@@ -10,7 +10,7 @@ h1, h2, .logo {
     font-family: 'Fredoka One', sans-serif;
 }
 
-p {
+h3, h4, h5, h6, p {
     font-weight: 800;
 }
 
@@ -96,9 +96,17 @@ i:hover {
 /* Buttons */
 
 button {
-    background-color: #D8E2DC;
+    background-color: #9D8189;
     font-weight: 800;
     border-radius: 10px;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #FFE5D9;
+    font-weight: 800;
+    border-radius: 10px;
+    color: #000;
 }
 
 /* Appointment Cards */
