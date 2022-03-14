@@ -77,6 +77,16 @@ i:hover {
     color: inherit;
 }
 
+/* Hero Image */
+
+.hero-image {
+    background-image: url('/static/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    position: relative;
+}
+
 
 /* Buttons */
 
@@ -105,6 +115,10 @@ button {
 @media screen and (max-width: 768px){
     .responsive-font {
         font-size: 1.0rem;
+    }
+
+    .hero-image {
+        min-height: 30vh;
     }
 }
 

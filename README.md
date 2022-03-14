@@ -17,7 +17,7 @@ Using core Design Thinking methods and Agile practices principles the strategy f
 
 #### Persona 1 (Business Owner)
 
-<img src="static/images/readme/dany.jpg" style="width: 8%" />
+<img src="static/documents/readme/dany.jpg" style="width: 8%" />
 
 Danyelle Maya, 24, Nail Designer, Single
 
@@ -34,7 +34,7 @@ Danielle is currently trying to grow her business but the lack of English knowle
 
 #### Persona 2 (Client)
 
-<img src="static/images/readme/louise.jpg" style="width: 8%" />
+<img src="static/documents/readme/louise.jpg" style="width: 8%" />
 
 Louise Smith, 31, Real Estate Agent, Married
 
