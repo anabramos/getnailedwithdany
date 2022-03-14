@@ -1,3 +1,4 @@
+from datetime import datetime
 from django import forms
 from allauth.account.forms import SignupForm
 from .models import Appointment
@@ -48,3 +49,10 @@ class AppointmentForm(forms.ModelForm):
         widgets = {
             'timestamp': DateInput()
         }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['timestamp'].widget.attrs.update({
+            'min': datetime.now().strftime("%Y-%m-%dT00:00"),
+            'step': '3600'
+        })
