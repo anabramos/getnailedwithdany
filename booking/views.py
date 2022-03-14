@@ -16,6 +16,8 @@ def make_appointment(request):
             appointment.user = request.user
             appointment.save()
 
+            return redirect('my-account')
+
     appointment_form = AppointmentForm()
     return render(request,
                   'make-appointment.html',
@@ -45,6 +47,8 @@ def change_appointment(request, appointment_appointment_id):
             appointment = appointment_form.save(commit=False)
             appointment.user = request.user
             appointment.save()
+
+            return redirect('my-account')
 
     appointment_form = AppointmentForm(instance=appointment)
     return render(request, 'change-appointment.html',
