@@ -79,7 +79,7 @@ i:hover {
 /* Hero Image */
 
 .hero-image {
-    background-image: url('/media/hero-image.jpg');
+    background-image: url('https://res.cloudinary.com/anabramos/image/upload/v1647298637/static/images/hero-image.9c6db1f40171.jpg');
     background-size: cover;
     background-position: center;
     min-height: 60vh;
