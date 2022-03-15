@@ -79,7 +79,7 @@ i:hover {
 /* Hero Image */
 
 .hero-image {
-    background-image: url('/static/images/hero-image.jpg');
+    background-image: url('/media/hero-image.jpg');
     background-size: cover;
     background-position: center;
     min-height: 60vh;
