@@ -13,9 +13,7 @@ status_options = (
 
 
 class Appointment(models.Model):
-    """
-    Model for making appointment requests
-    """
+    """ Model for making appointment requests """
     appointment_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
@@ -25,9 +23,7 @@ class Appointment(models.Model):
                               default="pending")
 
     class Meta:
-        """
-        Order appointments by date
-        """
+        """ Order appointments by date """
         ordering = ['timestamp']
 
     def __str__(self):

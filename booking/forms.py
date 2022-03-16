@@ -18,9 +18,7 @@ class CustomSignupForm(SignupForm):
                                 (attrs={'placeholder': 'Last Name'}))
 
     def save(self, request):
-        """
-        Save custom filed to User Model
-        """
+        """ Save custom filed to User Model """
         user = super(CustomSignupForm, self).save(request)
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']
@@ -29,20 +27,14 @@ class CustomSignupForm(SignupForm):
 
 
 class DateInput(forms.DateInput):
-    """
-    Custom widget for datefields in form
-    """
+    """ Custom widget for datefields in form """
     input_type = 'datetime-local'
 
 
 class AppointmentForm(forms.ModelForm):
-    """
-    Creates Form from Appointment Module
-    """
+    """ Creates Form from Appointment Module """
     class Meta:
-        """
-        Renders selected fields from the Appointment Module into the Form
-        """
+        """ Renders fields from the Appointment Module into the Form """
         model = Appointment
         fields = ['service',
                   'timestamp']
@@ -54,6 +46,6 @@ class AppointmentForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields['timestamp'].widget.attrs.update({
             'min': datetime.now().strftime("%Y-%m-%dT00:00"),
-            'step': '3600', 
+            'step': '3600',
             'placeholder': 'Select your date here',
         })

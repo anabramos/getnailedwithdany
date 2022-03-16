@@ -6,12 +6,10 @@ from .models import Service
 
 
 def get_services(request):
-    """
-    Renders services page
-    """
+    """ Renders services page """
     services = Service.objects.all()
     context = {
-        'services' : services
+        'services': services
     }
 
     return render(request, 'services.html', context)

@@ -89,7 +89,7 @@ i:hover {
 /* Messages */
 
 .alert {
-    opacity: 0.5;
+    opacity: 0.9;
     margin-bottom: 0;
     z-index: 10000;
 }
@@ -143,8 +143,6 @@ button {
     background-color: #FFE5D9;
     color: #000;
 }
-
-
 
 /* Appointment Cards */
 

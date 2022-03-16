@@ -8,16 +8,12 @@ from .forms import ContactUsForm
 # Create your views here.
 
 def homepage(request):
-    """
-    Return homepage
-    """
+    """ Return homepage """
     return render(request, 'homepage.html')
 
 
 def contact_us(request):
-    """
-    Return Contact Us form rendered in a new page
-    """
+    """ Return Contact Us form rendered in a new page """
     # Variable asserts if contact form has been successfully sent
     message_sent = False
     if request.method == "POST":
@@ -44,4 +40,3 @@ def contact_us(request):
 
     return render(request, 'contact-us.html', {'contact_form': contact_form,
                                                'message_sent': message_sent})
-
