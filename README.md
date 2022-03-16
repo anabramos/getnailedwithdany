@@ -12,12 +12,12 @@ Get Nailed with Dany is a web application targeted at Amsterdam-based individual
 ## UX/UI
 Using core Design Thinking methods and Agile practices principles the strategy for this web application takes into consideration 2 personas: Business Owner and Client, and their respective problem statements. 
 
-### Personas
 
+### Personas
 
 #### Persona 1 (Business Owner)
 
-<img src="static/documents/readme/dany.jpg" style="width: 8%" />
+<img src="media/documents/readme/dany.jpg" style="width: 8%" />
 
 Danyelle Maya, 24, Nail Designer, Single
 
@@ -34,7 +34,7 @@ Danielle is currently trying to grow her business but the lack of English knowle
 
 #### Persona 2 (Client)
 
-<img src="static/documents/readme/louise.jpg" style="width: 8%" />
+<img src="media/documents/readme/louise.jpg" style="width: 8%" />
 
 Louise Smith, 31, Real Estate Agent, Married
 
@@ -62,20 +62,23 @@ Louise lives a busy life as a Real Estate Agent and mother. Her job requires her
 
 All user stories are documented with their respective acceptance criteria, story points and MoSCoW prioritization on [my Github Issues](https://github.com/anabramos/getnailedwithdany/issues)
 
+#### Core User Stories (Must Have, Should Have)
 1.	As the business owner I can log in so that I can access the site's backend.
 2.	As the business owner I can accept or cancel any booking requests so that I can manage last minute changes to my schedule.
 3.	As the business owner I can create, remove, update or delete the services provided from the website list so that the website always translates the services I have available at different moments.
 4.	As the business owner I can update the price of services from the website list so that I can keep the website up to date to accurately reflect the market prices.
-5.	As the business owner I can prevent guests from requesting more than one time slot per week so that I can efficiently manage customer expectations and schedule.
-6.	As the business owner I can see a profile picture of each client when I receive a booking request so that I know who to expect each day at my house.
-7.	As a client I can navigate the website intuitively so that I can find the information I need.
-8.	As a client I can get key information about services provided and prices from the landing page so that I can decide based on that if I want to register for an account.
-9.	As a client I can see the Instagram account of the service provider on the website so that I can check the quality of her work before registering for an account.
-10.	As a client I can send any questions or concerns to the service provider through the website so that I can receive any additional information I might need.
-11.	As a client I can register or log in so that I can make booking requests.
-12.	As a client I can easily see when I am logged in or logged out so that I know if I need to act upon that based on what I would like to do in the website.
-13.	As a client I can send a request for a booking time so that I can make an appointment to get my nails done.
-14.	As a client I can delete or change an existing booking request so that my booking requests can respond to any last minute change I might have in my schedule
+5.	As a client I can navigate the website intuitively so that I can find the information I need.
+6.	As a client I can get key information about services provided and prices from the landing page so that I can decide based on that if I want to register for an account.
+7.	As a client I can send any questions or concerns to the service provider through the website so that I can receive any additional information I might need.
+8.	As a client I can register or log in so that I can make booking requests.
+9.	As a client I can easily see when I am logged in or logged out so that I know if I need to act upon that based on what I would like to do in the website.
+10.	As a client I can send a request for a booking time so that I can make an appointment to get my nails done.
+11.	As a client I can delete or change an existing booking request so that my booking requests can respond to any last minute change I might have in my schedule
+
+#### Future Features (Could Have, Won't Have)
+11.	As the business owner I can prevent guests from requesting more than one time slot per week so that I can efficiently manage customer expectations and schedule.
+13.	As the business owner I can see a profile picture of each client when I receive a booking request so that I know who to expect each day at my house.
+14.	As a client I can see the Instagram account of the service provider on the website so that I can check the quality of her work before registering for an account.
 15.	As a client I can edit my personal details so that these are up to date in case I need to be contacted by the service provider.
 
 ### Agile Practices
@@ -101,12 +104,57 @@ In response to the problem statements and user stories attributed to business ow
 
 This web application also utilizes built-in django applications, frameworks and libraries to compliment the above mentioned structure and features. 
 
-### Database Structure
+#### Database Structure
 
 The Database for this web application has undergone changes as the project developed. This is due to the fact that some of my initial planned custom models were being repetitive of already existing built-in Django Models. Initially the plan was to take 3 custom models: 'Service', 'Customer' and 'Appointment' (see Relationship Diagram Img.1). However, after developing the user account feature with allauth app, I realized that my custom Customer Model was not only very similar to allauh's User Model, but also created certain complications in terms of connecting the two. To optimize my time and my code writing, I have returned to the drawing board for rethinking my database structure. The final structure that concerns this web application uses 2 custom models: 'Service' and 'Appointment' and related to the User Model from django allauth (see Relationship Diagram Img.2).
 
-<img src="static/documents/diagrams/diagram1.png" style="width: 40%" />
-<img src="static/documents/diagrams/diagram2.png" style="width: 40%" />
+<img src="media/documents/diagrams/diagram1.png" style="width: 40%" />
+<img src="media/documents/diagrams/diagram2.png" style="width: 40%" />
+
+### Design
+
+#### Colors
+The website colors are inspired by nail polish baby pastel colors. It uses the darker faded brown color to create contrast between text and background, and the other colors are used intertwined to reinforce borders, banners and highlight certain features/sections in the website.
+
+<img src="media/documents/readme/dany.jpg" style="width: 20%" />
+
+#### Fonts
+The website uses a combination of Fredoka One and Raleway fonts, with a fall back to sans-serif. These fonts are popularly paired together. Fredoka One is used in the website for high-level headings and logo while Raleway is used for regular text and low level headings. The fonts were compared and taken from Google Fonts.
+
+#### Icons
+This website makes use of icons from Font Awesome to give a new visual element and reinforce the content already displayed. The Icons are used to indicate social media links on the website's footer.
+
+## Technologies Used
+
+- Languages
+    - [HTML5](https://en.wikipedia.org/wiki/HTML)
+    - [CSS](https://en.wikipedia.org/wiki/CSS)
+    - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 
+- Libraries & Frameworks
+    - [Django](https://www.djangoproject.com/)
+    - [Bootstrap](https://getbootstrap.com/)
+    - [Google Fonts](https://fonts.google.com/)
+    - [Font Awesome](https://fontawesome.com/)
+
+- Tools
+    - [Gitpod](https://www.gitpod.io/)
+    - [Github](https://github.com/)
+    - [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
+    - [Heroku](https://dashboard.heroku.com/apps)
+    - [Cloudinary](https://cloudinary.com/)
+    - [SQLite](https://www.sqlite.org/index.html)
+    - [PostgreSQL](https://www.postgresql.org/)
+    - [MBalsamiq](https://balsamiq.com/)
+    - [Coolors (color schemes generator)](https://coolors.co/)
+    - [Unsplash](https://unsplash.com/)
+    - [Am I Responsive?](http://ami.responsivedesign.is/)
+    - [WebAIM](https://webaim.org/resources/contrastchecker/)
+    - [W3C HTML Validation Service](https://validator.w3.org/)
+    - [W3C CSS Validation Service](https://validator.w3.org/)
+    - [Pep8](http://pep8online.com/)
+    - [JSHint](https://jshint.com/)
+    - [Flatpickr](https://flatpickr.js.org/)
 
