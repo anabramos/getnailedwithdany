@@ -30,8 +30,12 @@ def my_account(request):
     """
     current_user = request.user
     my_appointments = Appointment.objects.filter(user=current_user)
+
+    no_appointments = len(my_appointments) < 1
+
     return render(request, 'my-account.html',
-                  {'my_appointments': my_appointments})
+                  {'my_appointments': my_appointments,
+                   'no_appointments': no_appointments})
 
 
 def change_appointment(request, appointment_appointment_id):

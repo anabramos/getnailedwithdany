@@ -19,22 +19,27 @@
             <div class="col-md-8 mt-3 offset-md-2">
                 <!-- My Appointment Details -->
                 <h2>My Appointments:</h2>
-                {% for appointment in my_appointments %}
-                    <div>
-                        <div class="fade-yellow card-body">
-                            <h5 class="card-title">{{ appointment.service }}</h5>
-                            <h6 class="card-subtitle mb-2">{{ appointment.timestamp }}</h6>
-                            <p class="card-text">{{ appointment.service.service_description }}</p>
-                            <p class="card-text">status: {{ appointment.status }}</p>
-                            <a href="/edit/{{ appointment.appointment_id }}">
-                                <button>Modify</button>
-                            </a>
-                            <a href="/delete/{{ appointment.appointment_id }}">
-                                <button>Cancel</button>'
-                            </a>
+                {% if no_appointments %}
+                    <p>You have no appointments at the moment.</p>
+                    <p>For making an appointment you can <u><a href="{% url 'make-appointment' %}">CLICK HERE</a></u></p>
+                {% else %}
+                    {% for appointment in my_appointments %}
+                        <div>
+                            <div class="fade-yellow card-body">
+                                <h5 class="card-title">{{ appointment.service }}</h5>
+                                <h6 class="card-subtitle mb-2">{{ appointment.timestamp }}</h6>
+                                <p class="card-text">{{ appointment.service.service_description }}</p>
+                                <p class="card-text">status: {{ appointment.status }}</p>
+                                <a href="/edit/{{ appointment.appointment_id }}">
+                                    <button>Modify</button>
+                                </a>
+                                <a href="/delete/{{ appointment.appointment_id }}">
+                                    <button>Cancel</button>'
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
     </div>

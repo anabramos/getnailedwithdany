@@ -82,7 +82,7 @@ i:hover {
     background-image: url('https://res.cloudinary.com/anabramos/image/upload/v1647298637/static/images/hero-image.9c6db1f40171.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
+    min-height: 40vh;
     position: relative;
 }
 
@@ -113,6 +113,11 @@ button:hover {
 
 .card {
     display: inline;
+}
+
+.card-body {
+    margin: 3px;
+    border-radius: 10px;
 }
 
 /* Hide the up dan down arrows on the datepicker widget, still requires backend validation! */
