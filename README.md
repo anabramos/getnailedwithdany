@@ -116,13 +116,60 @@ The Database for this web application has undergone changes as the project devel
 #### Colors
 The website colors are inspired by nail polish baby pastel colors. It uses the darker faded brown color to create contrast between text and background, and the other colors are used intertwined to reinforce borders, banners and highlight certain features/sections in the website.
 
-<img src="media/documents/readme/dany.jpg" style="width: 20%" />
+<img src="media/documents/readme/getnailed-palette.PNG" style="width: 40%" />
 
 #### Fonts
 The website uses a combination of Fredoka One and Raleway fonts, with a fall back to sans-serif. These fonts are popularly paired together. Fredoka One is used in the website for high-level headings and logo while Raleway is used for regular text and low level headings. The fonts were compared and taken from Google Fonts.
 
 #### Icons
 This website makes use of icons from Font Awesome to give a new visual element and reinforce the content already displayed. The Icons are used to indicate social media links on the website's footer.
+
+## Features
+
+### Home page
+- The navbar is a big menu for what the website has to offer.  It contains links to other active pages within the website, providing a easy and intuitive navigation. The vabar also changes based on if users are logged in or not. For users who are not registered nor logged in, it allows them to easily find the ways to create and account or see the services available. For logged in users, they will see a link to their 'my account page(see feature bellow) or directing them to logout. The navbar is responsive and styled with collapse menu for mobile versions.
+
+<img src="media/documents/readme/navbar.PNG" style="width: 60%" />
+
+- The About section brings top the audience information about the businesses owner to create a more personal approach. In this section you will also find a button that invites individuals to make an account, and a contact us banner that will redirect users to a contact form to submit inquiries or send general messages.
+
+<img src="media/documents/readme/about.PNG" style="width: 30%" />
+
+<img src="media/documents/readme/contact-us-banner.PNG" style="width: 30%" />
+
+- The footer provides to the user links to the relevant social media of the business owver, as well as the copyright information of the web developer.
+
+<img src="media/documents/readme/footer.PNG" style="width: 40%" />
+
+### Services
+- The services section displays a list of all services provided by the business owner, with description and prices. These are linked to the web apploications' database.
+
+<img src="media/documents/readme/services.PNG" style="width: 30%" /> 
+
+### Contact-us Form
+- In the contact us section, users can - even if not registered - send a message to the business owner. For that, all fields mmust be correctly filled so that the form is submitted. If these are not correctly filled a warning will appear. If the form is submitted correctly then the user will get a confirmation page saying their message has been successfully submitted.
+
+<img src="media/documents/readme/contact-us-form.PNG" style="width: 30%" />
+
+### Make an appointment
+- In the make an appointment section, logged in users only can make an appointment for a nail treatment with the business owner. They are able to select the nail treatment of choice and select a date and time for appointment. Only week days are availabloe for booking, and also the earliest day one can book is always within 24h of the moment they log-in. If a specific date and time is already booked in the system, then the user will get a form error. If the appointment is planned successfully, then the user will be redirected to their 'My Accout' page.
+
+<img src="media/documents/readme/make-appointment.PNG" style="width: 30%" />
+
+### My Account
+- In the my account section users are able to check their user details and their appointments for the future. They can also modify or cancel(delete) appointments completely. If they decide to modify an appointmet, they will be redirected to the make-an-appointment form again and will be able to select a new nail treatment or a new date and time. In this case, their appointment status will be pending again. If they delete their appointment, this will then be deleted from their 'My Account' page. 
+
+<img src="media/documents/readme/my-account.PNG" style="width: 30%" />
+
+### User accounht features
+- Users have the possibility to register, login and logout of the website at anytime. For these features there are validation forms required (register and login), and for logout there is a confirmation page with a logout button. When these actions take place, the user gets a brief message on top of the navbar updating the status of their account. 
+
+<img src="media/documents/readme/register.PNG" style="width: 30%" />
+
+<img src="media/documents/readme/login.PNG" style="width: 30%" />
+
+<img src="media/documents/readme/logout.PNG" style="width: 30%" />
+
 
 ## Technologies Used
 

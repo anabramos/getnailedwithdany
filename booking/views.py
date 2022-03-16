@@ -25,9 +25,7 @@ def make_appointment(request):
 
 
 def my_account(request):
-    """
-    Return My Account page to User
-    """
+    """ Return My Account page to User """
     current_user = request.user
     my_appointments = Appointment.objects.filter(user=current_user)
 
@@ -39,9 +37,7 @@ def my_account(request):
 
 
 def change_appointment(request, appointment_appointment_id):
-    """
-    Change Appointment details
-    """
+    """ Change Appointment details """
     appointment = get_object_or_404(Appointment,
                                     appointment_id=appointment_appointment_id)
     if request.method == "POST":
@@ -60,9 +56,7 @@ def change_appointment(request, appointment_appointment_id):
 
 
 def delete_appointment(request, appointment_appointment_id):
-    """
-    Delete Appointment
-    """
+    """ Delete Appointment """
     appointment = get_object_or_404(Appointment,
                                     appointment_id=appointment_appointment_id)
     appointment.delete()
