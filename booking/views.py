@@ -9,6 +9,7 @@ def make_appointment(request):
     """
     Make new appointment form and post to database
     """
+    appointment_form = AppointmentForm()
     if request.method == "POST":
         appointment_form = AppointmentForm(request.POST)
         if appointment_form.is_valid():
@@ -18,7 +19,6 @@ def make_appointment(request):
 
             return redirect('my-account')
 
-    appointment_form = AppointmentForm()
     return render(request,
                   'make-appointment.html',
                   {'appointment_form': appointment_form})
