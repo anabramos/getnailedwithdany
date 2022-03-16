@@ -214,19 +214,18 @@ From the GitHub repository page click on 'Fork' in the top-right corner.
 Create a new repository with a new name based on this project.
 Make sure to credit the project in case you decide to use any of the original code.
 
-
 ## Credits
 Content
-    For the extension of the django allauth User Model I used the tutorial from GeeksforGeeks. 
+- For the extension of the django allauth User Model I used the tutorial from GeeksforGeeks. 
 
 Media
-    All images for this website were taken from Unsplash.
+- All images for this website were taken from Unsplash.
 
-    Hero-image - Pink Nails: Photo by [Element5 Digital](https://unsplash.com/@element5digital) 
+  - Hero-image - Pink Nails: Photo by [Element5 Digital](https://unsplash.com/@element5digital) 
 
-    Persona 1 README- Happy Girl: Photo by [Michael Dam](https://unsplash.com/@michaeldam) 
+  - Persona 1 README- Happy Girl: Photo by [Michael Dam](https://unsplash.com/@michaeldam) 
 
-    Persona 2 README - Sales woman sitting in cafe coffee shop: Photo by [LinkedIn Sales Solutions](https://unsplash.com/@linkedinsalesnavigator) 
+  - Persona 2 README - Sales woman sitting in cafe coffee shop: Photo by [LinkedIn Sales Solutions](https://unsplash.com/@linkedinsalesnavigator) 
 
 ## Acknowledgements
 
