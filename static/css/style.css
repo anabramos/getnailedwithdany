@@ -117,19 +117,34 @@ input, select, textarea {
 
 /* Buttons */
 
-button {
+button:hover {
     background-color: #9D8189;
     font-weight: 800;
     border-radius: 10px;
     color: #fff;
 }
 
-button:hover {
+button {
     background-color: #FFE5D9;
     font-weight: 800;
     border-radius: 10px;
     color: #000;
 }
+
+.modify-button {
+    background-color: lightgreen;
+}
+
+.cancel-button {
+    background-color: lightcoral;
+}
+
+.modify-button:hover, .cancel-button:hover {
+    background-color: #FFE5D9;
+    color: #000;
+}
+
+
 
 /* Appointment Cards */
 
