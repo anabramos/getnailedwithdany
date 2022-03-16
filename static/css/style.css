@@ -115,6 +115,11 @@ button:hover {
     display: inline;
 }
 
+/* Hide the up dan down arrows on the datepicker widget, still requires backend validation! */
+.flatpickr-time.time24hr .numInputWrapper:nth-of-type(2) .arrowUp, 
+    .flatpickr-time.time24hr .numInputWrapper:nth-of-type(2) .arrowDown {
+    display: none; 
+}
 
 /* For screen sizes from 905px wide or smaller*/
 @media screen and (max-width: 905px){

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const currentDate = new Date();
+    const tomorrow = new Date(currentDate);
+
 
     flatpickr("#id_timestamp", { 
         // Use flatpickr to configure date availibility
@@ -9,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         theme: 			"material_green",      
         
         // Date settings
-        minDate:        "today", 
+        minDate:        tomorrow.setDate(tomorrow.getDate() + 1),
         disable:        [
             function(date) {
                 // return true to disable
@@ -21,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         enableTime:     true,
         time_24hr:      true,
         minTime:        "10:00",
-        maxTime:        "17:00",
+        maxTime:        "17:00",                
     });
 });
