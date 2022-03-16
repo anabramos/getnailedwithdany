@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
-                <h2>My Account Details:</h2>
+                <h2 class="mb-4">My Account Details:</h2>
                 <p>Name: <span class="fade-yellow">{{user.first_name}} {{user.last_name}}</span></p>
                 <p>Username: <span class="fade-yellow">{{user.username}}</span></p>
                 <p>Email: <span class="fade-yellow">{{user.email}}</span></p>
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-md-8 mt-3 offset-md-2">
                 <!-- My Appointment Details -->
-                <h2>My Appointments:</h2>
+                <h2 class="mb-4">My Appointments:</h2>
                 {% if no_appointments %}
                     <p>You have no appointments at the moment.</p>
                     <p>For making an appointment you can <u><a href="{% url 'make-appointment' %}">CLICK HERE</a></u></p>
@@ -34,7 +34,7 @@
                                     <button>Modify</button>
                                 </a>
                                 <a href="/delete/{{ appointment.appointment_id }}">
-                                    <button>Cancel</button>'
+                                    <button id="cancel-button">Cancel</button>'
                                 </a>
                             </div>
                         </div>

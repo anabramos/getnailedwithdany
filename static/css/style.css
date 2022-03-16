@@ -89,8 +89,30 @@ i:hover {
 /* Messages */
 
 .alert {
+    opacity: 0.5;
     margin-bottom: 0;
     z-index: 10000;
+}
+
+/* Forms & Tables */
+
+
+table {
+    width: 100%;
+}
+
+input, select, textarea {
+    width: 100%;
+}
+
+#id_remember {
+    width: auto;
+}
+
+.errorlist {
+    color: red;
+    font-weight: 900;
+    background-color: #fff;
 }
 
 /* Buttons */

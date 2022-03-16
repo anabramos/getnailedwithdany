@@ -78,17 +78,18 @@
         <div class="hero-image">
         </div>
             
+        <!-- Ccreate min viewport height size so that footer doesnt come up when website displays minimal content -->
         <main class="height-60vh py-5 fade-red">
 
-        {% block content %}
-        <!-- Content returns here -->
-        {% endblock content %}
+            {% block content %}
+            <!-- Content returns here -->
+            {% endblock content %}
 
         </main>
 
         <!-- Footer -->
         <footer class="page-footer text-center">
-            <div class="text-center fade-brown py-3 fs-6 text-white">
+            <div class="text-center responsive-font fade-brown py-3 text-white">
                 
                 <!-- Social media links -->
                 <div class="flex-center">
@@ -104,7 +105,7 @@
                 </div>
 
                 <!-- Copyright -->
-                <span>© 2022 AwesomeAna Web Development</span>
+                <p>© 2022 AwesomeAna Web Development</p>
             </div>
         </footer>
         <!-- JavaScript -->

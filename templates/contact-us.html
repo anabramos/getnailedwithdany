@@ -14,14 +14,14 @@
                     <p> Your message was sent successfully</p>
 
                 {% else %}
-                    <h2>Send us a message!</h2>
+                    <h2 class="mb-4">Send us a message!</h2>
                     <!-- Contact Us Form -->
                     <form method="POST">
                         <table>
                             {% csrf_token %}
                             {{ contact_form.as_table }}
                         </table>
-                        <button type="submit">Send!</button>
+                        <div class="mt-4 text-center"><button class=" w-25" type="submit">Send!</button></div>
                     </form>
                 {% endif %}
             </div>

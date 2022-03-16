@@ -9,7 +9,7 @@
         <div class="row">
             {% if user.is_authenticated %}
                 <div class="col-md-8 mt-3 offset-md-2">
-                    <h2>Hi {{ user.first_name }}, you can make your appointment below</h2>
+                    <h2 class="mb-4">Hi {{ user.first_name }}, you can make your appointment below</h2>
                     <form method="POST">
                         <table>
                             <tr>
@@ -28,7 +28,7 @@
                 </div>
             {% else %}
                 <div class="col-md-8 mt-3 offset-md-2">
-                    <h2>Oops...</h2>
+                    <h2 class="mb-4">Oops...</h2>
                     <p>If you want to make an appointment, please <a href="{% url 'account_login' %}"><u>login</u></a>, or <a href="{% url 'account_signup' %}"><u>register</u></a> for an account first.</p>
                 </div>
             {% endif %}
