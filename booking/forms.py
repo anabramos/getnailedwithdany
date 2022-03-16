@@ -54,5 +54,6 @@ class AppointmentForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields['timestamp'].widget.attrs.update({
             'min': datetime.now().strftime("%Y-%m-%dT00:00"),
-            'step': '3600'
+            'step': '3600', 
+            'placeholder': 'Select your date here',
         })

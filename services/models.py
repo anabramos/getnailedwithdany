@@ -19,4 +19,4 @@ class Service(models.Model):
         ordering = ['service_title']
 
     def __str__(self):
-        return self.service_title
+        return str(self.service_title)
