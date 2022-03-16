@@ -132,7 +132,6 @@ This website makes use of icons from Font Awesome to give a new visual element a
     - [Javascript](https://en.wikipedia.org/wiki/JavaScript)
     - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-
 - Libraries & Frameworks
     - [Django](https://www.djangoproject.com/)
     - [Bootstrap](https://getbootstrap.com/)
@@ -158,3 +157,77 @@ This website makes use of icons from Font Awesome to give a new visual element a
     - [JSHint](https://jshint.com/)
     - [Flatpickr](https://flatpickr.js.org/)
 
+
+## Deployment
+
+The website was deployed using Heroku. My repository is build using the Code Institute Python Essentials Template. The deployment was done on the first day of building this repository. To deploy this website I used Code Institute's Django Deployment Instructions provided in the course section I Think Therefore I Blog > Getting Set Up > Creating The Django Project Checklist. 
+
+For deployment, the following steps were taken:
+
+- On my gitpod workspace - Command Line:
+1. Install Django - `pip3 install Django==3.2 gunicorn`
+2. Install Django supporting libraries: Psycopg2 and Cloudinary `pip3 install dj_database_url psycopg2` | `pip3 install dj3-cloudinary-storage`
+3. Update requirements.txt file `pip3 freeze --local > requirements.txt`
+4. Create Django Project and relevant apps `django-admin startproject PROJ_NAME .` | `python3 manage.py startapp APP_NAME` 
+5. Add installed apps to settings.py file
+6. Migrate Chnages `python3 manage.py migrate`
+7. Run server for testing `python3 manage.py runserve`
+- On Heroku:
+8. Create new Heroku app
+9. Add Heroku Postgres Add-ons from Heroku's resource tab
+10. Copy DATABASE_URL value to Heroku's Config Vars under settings tab
+- On my gitpod workspace - Directory:
+11. Create env.py file
+12. Import os library
+13. Set up DATABASE_URL and SECRET_KEY environment variables
+- On Heroku:
+14. Set SECRET_KEY value to Heroku's Config Vars under settings tab
+- On my gitpod workspace - Settings.py file:
+15. Import os library and set up database to function on local environemt
+16. Add replacement SECRET_KEY value
+17. Comment out DATABASE = { } section
+18. Add new DATABASE section that links with Heroku's config var 
+- On my gitpod workspace - Command Line:
+19. Save all files and make migrations `python3 manage.py migrate`
+- On my Cloudinary account:
+20. Copy my CLOUDINARY_URL from Dashboard
+- On my gitpod workspace - env.py file:
+21. Add Cloudinary URL to env.py file
+- On Heroku:
+22. Add Cloudinary URL to Heroku Config Vars
+23. Add DISABLE_COLLECTSTATIC to Heroku Config Vars 
+- On my gitpod workspace - Settings.py file:
+24. Add Cloudinary Libraries to installed apps
+25. Tell Django to use Cloudinary to store media and static files by setting up Static Files Storage variables
+26. Add Heroku Hostname to ALLOWED_HOSTS
+- On my gitpod workspace - Directory:
+27. Create procfile on the top level directory
+28. Add code to Procfile `web: gunicorn PROJ_NAME.wsgi`
+- On my gitpod workspace - Command Line:
+29. Perform Git control and push changes to repository
+- On Heroku:
+30. Deploy it manually to Heroku using GitHub, using main branch 
+
+### Forking
+To use this project as a reference or starting point, or even to propose changes to it, you can fork this repository by following these steps:
+From the GitHub repository page click on 'Fork' in the top-right corner.
+Create a new repository with a new name based on this project.
+Make sure to credit the project in case you decide to use any of the original code.
+
+
+## Credits
+Content
+    For the extension of the django allauth User Model I used the tutorial from GeeksforGeeks. 
+
+Media
+    All images for this website were taken from Unsplash.
+
+    Hero-image - Pink Nails: Photo by [Element5 Digital](https://unsplash.com/@element5digital) 
+
+    Persona 1 README- Happy Girl: Photo by [Michael Dam](https://unsplash.com/@michaeldam) 
+
+    Persona 2 README - Sales woman sitting in cafe coffee shop: Photo by [LinkedIn Sales Solutions](https://unsplash.com/@linkedinsalesnavigator) 
+
+## Acknowledgements
+
+A huge thanks to my mentor Samantha Dartnall, the CI slack community and tutoring team, and my friends who tested the website at least 1000x.
