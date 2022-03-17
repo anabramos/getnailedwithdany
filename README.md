@@ -183,8 +183,14 @@ This website makes use of icons from Font Awesome to give a new visual element a
 
 <img src="media/documents/readme/admin-services.PNG" style="width: 30%" />
 
+## Testing
 
+### Validation
+- HTML Code passed [W3C HTML Validation Service](https://validator.w3.org/) with one exception: the rendering of django forms as tables ({{form.as_table}}) states that non input field may be inserted as descendent from a tabkle field. For this reason the Validation is not fully accepted. 
 
+- CSS Code passed [W3C CSS Validation Service](https://validator.w3.org/) with no exceptions
+
+- Javascript Code passed [JSHint validation](https://jshint.com/)
 
 ## Technologies Used
 

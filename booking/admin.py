@@ -6,7 +6,6 @@ from .models import Appointment, Service
 
 @admin.register(Appointment)
 class AppointmentAdmim(admin.ModelAdmin):
-    """ Customize admin view of appointments in the back end with such fields """
+    """ Customize admin view of appointments with such fields """
     list_filter = ('timestamp', 'status')
-    list_display = ('timestamp', 'service', 'status','user', 'appointment_id')
-
+    list_display = ('timestamp', 'service', 'status', 'user', 'appointment_id')
