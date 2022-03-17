@@ -55,7 +55,7 @@ Louise lives a busy life as a Real Estate Agent and mother. Her job requires her
 
 - Problem Statement: Louise Smith
 
-    I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons to check if they have availibility because I am a mother with unpredictable working hours which makes me feel like if I don’t get to easily make appointments for getting my nails done, I will have to go to work with un-done nails and I won’t be taken seriously in my job. 
+    I am a real estate agent trying to book easy and flexible beauty services for myself but I don’t have the time to call different saloons to check if they have availability  because I am a mother with unpredictable working hours which makes me feel like if I don’t get to easily make appointments for getting my nails done, I will have to go to work with un-done nails and I won’t be taken seriously in my job. 
 
 
 ### User Stories
@@ -84,10 +84,10 @@ All user stories are documented with their respective acceptance criteria, story
 ### Agile Practices
 
 #### Wireframes
-- All wireframes were designed with Balsamiq tool. These can be found [here](https://github.com/anabramos/getnailedwithdany/tree/main/static/documents/wireframes). Final web application will differ slightly from wireframes as it will utlize more similar structures between different pages for better visual appeal and user experience.
+- All wireframes were designed with Balsamiq tool. These can be found [here](https://github.com/anabramos/getnailedwithdany/tree/main/static/documents/wireframes). Final web application will differ slightly from wireframes as it will utilize more similar structures between different pages for better visual appeal and user experience.
 
 #### Product Backlog & Project Board
-- I created my product backlog using [my Github Milestones](https://github.com/anabramos/getnailedwithdany/milestones), dividing story points more or less euqaly per iteration. This however did not translate the build up order of the project, as I had overestimated how some tasks and features are dependant from others to being build.  
+- I created my product backlog using [my Github Milestones](https://github.com/anabramos/getnailedwithdany/milestones), dividing story points more or less equally per iteration. This however did not translate the build =up order of the project, as I had overestimated how some tasks and features are dependent from others to being build.  
 - For information radiators I have made use of [my Github Projects](https://github.com/anabramos/getnailedwithdany/projects/1)
 
 ### Scope & Structure
@@ -96,11 +96,11 @@ In response to the problem statements and user stories attributed to business ow
 
 3 Custom Django apps:
 1. Website
-    Concerns the design of a Front-End web application that meets acessibility guidelines and provides a set for responsive user interaction via its homepage, navbar and navigation links. It contains a homepage with information about the website and navigation links that will take the client to different website features. Lastly, it presents a contact form so that (potential) clients send a message to business owner.
+    Concerns the design of a Front-End web application that meets accessibility guidelines and provides a set for responsive user interaction via its homepage, navbar and navigation links. It contains a homepage with information about the website and navigation links that will take the client to different website features. Lastly, it presents a contact form so that (potential) clients send a message to business owner.
 2. Services
-    Concerns the display of all services provided by the business owner, including prices. These are directly linked to the database and can be updated at aytime by admin users. Changes on the database are also immediatelly translated to the Front-End of the website.
+    Concerns the display of all services provided by the business owner, including prices. These are directly linked to the database and can be updated at anytime by admin users. Changes on the database are also immediately  translated to the Front-End of the website.
 3. Booking
-    Concerns the ability of clients to make and manage their appointments, including modifying and cancelling(delete) existing appointments. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account before making an appointment. 
+    Concerns the ability of clients to make and manage their appointments, including modifying and cancelling (delete) existing appointments. This feature is only available for registered users when logged-in. Un-registered users will be requested to create an account before making an appointment. 
 
 This web application also utilizes built-in django applications, frameworks and libraries to compliment the above mentioned structure and features. 
 
@@ -130,40 +130,40 @@ This website makes use of icons from Font Awesome to give a new visual element a
 - The navbar is a big menu for what the website has to offer. It contains links to other active pages within the website, providing a easy and intuitive navigation. 
 <img src="media/documents/readme/navbar.PNG" style="width: 60%" />
 
-- The About section brings top the audience information about the businesses owner to create a more personal approach. In this section you will also find a button that invites individuals to make an account, and a contact us banner that will redirect users to a contact form to submit inquiries or send general messages.
+- The About section brings to the audience information about the businesses owner to create a more personal approach. In this section you will also find a button that invites individuals to make an account, and a contact us banner that will redirect users to a contact form to submit inquiries or send general messages.
 
 <img src="media/documents/readme/about.PNG" style="width: 30%" />
 
 <img src="media/documents/readme/contact-us-banner.PNG" style="width: 30%" />
 
-- The footer provides to the user links to the relevant social media of the business owver, as well as the copyright information of the web developer.
+- The footer provides to the user links to the relevant social media of the business owner, as well as the copyright information of the web developer.
 
 <img src="media/documents/readme/footer.PNG" style="width: 40%" />
 
 ### Services
-- The services section displays a list of all services provided by the business owner, with description and prices. These are linked to the web apploications' database.
+- The services section displays a list of all services provided by the business owner, with description and prices. These are linked to the web applications' database.
 
 <img src="media/documents/readme/services.PNG" style="width: 30%" /> 
 
 ### Contact-us Form
-- In the contact us section, users can - even if not registered - send a message to the business owner. For that, all fields mmust be correctly filled so that the form is submitted. If these are not correctly filled a warning will appear. If the form is submitted correctly then the user will get a confirmation page saying their message has been successfully submitted.
+- In the contact us section, users can - even if not registered - send a message to the business owner. For that, all fields must be correctly filled so that the form is submitted. If these are not correctly filled a warning will appear. If the form is submitted correctly then the user will get a confirmation page saying their message has been successfully submitted.
 
 <img src="media/documents/readme/contact-us-form.PNG" style="width: 30%" />
 
 ### Make an appointment
-- In the make an appointment section, logged in users only can make an appointment for a nail treatment with the business owner. They are able to select the nail treatment of choice and select a date and time for appointment. Only week days are availabloe for booking, and also the earliest day one can book is always within 24h of the moment they log-in. If a specific date and time is already booked in the system, then the user will get a form error. If the appointment is planned successfully, then the user will be redirected to their 'My Accout' page.
+- In the make an appointment section, logged in users only can make an appointment for a nail treatment with the business owner. They are able to select the nail treatment of choice and select a date and time for appointment. Only week days are available for booking, and also the earliest day one can book is always within 24h of the moment they log-in. If a specific date and time is already booked in the system, then the user will get a form error. If the appointment is planned successfully, then the user will be redirected to their 'My Account' page.
 
 <img src="media/documents/readme/make-appointment.PNG" style="width: 30%" />
 
 <img src="media/documents/readme/no-appointment.PNG" style="width: 30%" />
 
 ### My Account
-- In the my account section users are able to check their user details and their appointments for the future. They can also modify or cancel(delete) appointments completely. If they decide to modify an appointmet, they will be redirected to the make-an-appointment form again and will be able to select a new nail treatment or a new date and time. In this case, their appointment status will be pending again. If they delete their appointment, this will then be deleted from their 'My Account' page. 
+- In the 'my account' section users are able to check their user details and their appointments for the future. They can also modify or cancel (delete) appointments completely. If they decide to modify an appointment, they will be redirected to the make-an-appointment form again and will be able to select a new nail treatment or a new date and time. In this case, their appointment status will be pending again. If they delete their appointment, this will then be deleted from their 'My Account' page. 
 
 <img src="media/documents/readme/my-account.PNG" style="width: 30%" />
 
-### User accounht features
-- Users have the possibility to register, login and logout of the website at anytime. For these features there are validation forms required (register and login), and for logout there is a confirmation page with a logout button. When these actions take place, the user gets a brief message on top of the navbar updating the status of their account. 
+### User account features
+- Users have the possibility to register, login and logout of the website at any time. For these features there are validation forms required (register and login), and for logout there is a confirmation page with a logout button. When these actions take place, the user gets a brief message on top of the navbar updating the status of their account. 
 
 <img src="media/documents/readme/register.PNG" style="width: 30%" />
 
@@ -172,7 +172,7 @@ This website makes use of icons from Font Awesome to give a new visual element a
 <img src="media/documents/readme/logout.PNG" style="width: 30%" />
 
 ### Admin panel
-- The admin site panel gives the business owner and overview of all instances of the models crreatd for this project. It dispays all registered users, their details, and allows admin owner to make chages or delete these. The appointments section also gives thebusiness owner an overview of existing appoinments listed per date and the possibility to modify or cancel these appointments. Most importantly: Here is where the business owner can change the status of each appoointment from pendig to confirmed or denied. Lastly, in the services section of the admin panel the business owner can see the services that are currently available in the website and change or ddelete these so that the list on the front-end is up to date.
+- The admin site panel gives the business owner and overview of all instances of the models created for this project. It displays all registered users, their details, and allows admin owner to make changes or delete these. The appointments section also gives the business owner an overview of existing appointments listed per date and the possibility to modify or cancel these appointments. Most importantly: Here is where the business owner can change the status of each appointment from pending to confirmed or denied. Lastly, in the services section of the admin panel the business owner can see the services that are currently available in the website and change or delete these so that the list on the front-end is up to date.
 
 <img src="media/documents/readme/admin-django.PNG" style="width: 30%" />
 
@@ -194,7 +194,7 @@ This website makes use of icons from Font Awesome to give a new visual element a
 
 - Python code passed [Pep8 validation](http://pep8online.com/) with one exception: In settings.py file, the STATICFILES_STORAGE variable reads as too long. However, breaking this line with different methods was interfering with the builds of the deployed website on heroku. After trying different ways to make the line smaller and not achieving the expected result, I have returned it to be in full so that the website would be deployed correctly.  
 
-- Acessibility Report generated by [Lighthouse](https://developers.google.com/web/tools/lighthouse) performs at 88% - 95% through the website. 
+- Accessibility Report generated by [Lighthouse](https://developers.google.com/web/tools/lighthouse) performs at 88% - 95% through the website. 
 
 ### Manual Testing
 
@@ -204,36 +204,36 @@ This web application was tested manually by self, as well as web developer frien
 Django Admin site well implemented. It uses username and password for validation. Only the superuser/admin has access to the backend. Regular users will not be able to log in to the admin page with their credentials.  
 
 #### USER STORY 2.	As the business owner I can accept or cancel any booking requests so that I can manage last minute changes to my schedule.
-Admin user can visualise all existing appointment requests. All changes in status done by the admin are immediately translated to the front-end website to the respective  user. Admin can change the status of bookings from pending to 'confirmed' or 'denied' based on their scheduling schema. 
+Admin user can visualize all existing appointment requests. All changes in status done by the admin are immediately translated to the front-end website to the respective user. Admin can change the status of bookings from pending to 'confirmed' or 'denied' based on their scheduling schema. 
     
 #### USER STORY 3.	As the business owner I can create, remove, update or delete the services provided from the website list so that the website always translates the services I have available at different moments.
 #### USER STORY 4.	As the business owner I can update the price of services from the website list so that I can keep the website up to date to accurately reflect the market prices.
-Admin user can visualise and change all available nail treatment services and their prices from the backend. All changes in service title, description or price that are done and saved by the admin are immediately translated to the front-end website under the services page. 
+Admin user can visualize and change all available nail treatment services and their prices from the backend. All changes in service title, description or price that are done and saved by the admin are immediately translated to the front-end website under the services page. 
 
 #### USER STORY 5.	As a client I can navigate the website intuitively so that I can find the information I need.
-The Navbar takes the user to all different pages throughout the website. It is responsive to different screenn sizes, styled with collapse menu for mobile versions. The website is clean and formatted consistently using the same lenght of columns and tables to make it visualloy appealing. The color contrasts also passsed lighthouse acessibility repot with 88% - 95% throughout the website. 
+The Navbar takes the user to all different pages throughout the website. It is responsive to different screen sizes, styled with collapse menu for mobile versions. The website is clean and formatted consistently using the same length of columns and tables to make it visually appealing. The color contrasts also passed lighthouse accessibility repot with 88% - 95% throughout the website. 
 
 #### USER STORY 6.	As a client I can get key information about services provided and prices from the landing page so that I can decide based on that if I want to register for an account.
-All services provided, their description and prices are available to the user in a separate page that is open to all website visitors regardless of registration. These are rendered directly from the database which means they are alwways up to date. The services page can be easily founf in the navbar of the website.
+All services provided, their description and prices are available to the user in a separate page that is open to all website visitors regardless of registration. These are rendered directly from the database which means they are always up to date. The services page can be easily found in the navbar of the website.
 
 #### USER STORY 7.	As a client I can send any questions or concerns to the service provider through the website so that I can receive any additional information I might need.
-A contact form is available on the website for users who wish to submit a question or message to the business owner. The contact form has validation and wilkl onoly be sent if all fields are completed and users provide a valid e-mail - this way they can be contacted back about their inquiry. 
+A contact form is available on the website for users who wish to submit a question or message to the business owner. The contact form has validation and will only be sent if all fields are completed and users provide a valid e-mail - this way they can be contacted back about their inquiry. 
 
 #### USER STORY 8.	As a client I can register or log in so that I can make booking requests.
-Django allauth account system is implemented to allow users to register, login andn logout. This open up the possibility of making appointments and visualising them at 'my account page'. The registration requires users username, email , first and last name and a set of passwords. After registration the users details are saved in the database and they will then be able to login with only e-mail and password. 
+Django allauth account system is implemented to allow users to register, login and logout. This open up the possibility of making appointments and visualizing them at 'my account page'. The registration requires users’ username, email, first and last name and a set of passwords. After registration the users’ details are saved in the database and they will then be able to login with only e-mail and password. 
 
 #### USER STORY 9.	As a client I can easily see when I am logged in or logged out so that I know if I need to act upon that based on what I would like to do in the website.
-The Navbar is responsive to the users status within the website, as it changes based on if users are logged in or not. For users who are not registered nor logged in, it allows them to easily find the ways to create and account or see the services available. For logged in users, they will see a link to their 'my account page(see feature bellow) or directing them to logout. 
+The Navbar is responsive to the users status within the website, as it changes based on if users are logged in or not. For users who are not registered nor logged in, it allows them to easily find the ways to create and account or see the services available. For logged in users, they will see a link to their 'my account page (see feature bellow) or directing them to logout.
 
 #### USER STORY 10.	As a client I can send a request for a booking time so that I can make an appointment to get my nails done.
-In the make an appointment page users can submit an appointment reuqest that will have the default status of pending, until this is approved by admin on the backend. Appointments can oinly be done from 10am to 5pm during weekdays. There can only be one appoinhtment per timeslot, so in this case as might the user book a timeslot already busy they will receive a message in their form informing this timeslot is already busy. If the appointment is sent successfully to a free timeslot, then the user is redirecfted to their 'My account' page where they can visualise all of their appointments.
+In the make an appointment page users can submit an appointment request that will have the default status of pending, until this is approved by admin on the backend. Appointments can only be done from 10am to 5pm during weekdays. There can only be one appointment per timeslot, as in this case as might the user book a timeslot already busy they will receive a message in their form informing this timeslot is already busy. If the appointment is sent successfully to a free timeslot, then the user is redirected to their 'My account' page where they can visualize all of their appointments.
 
 #### USER STORY 11.	As a client I can delete or change an existing booking request so that my booking requests can respond to any last minute change I might have in my schedule
-In the my account page users get an overview of their user details and all of their booked appointments including status. The links to modify or cancel(delete) appointments work and will act accordinglyl. If they decide to modify an appointmet, they will be redirected to the make-an-appointment form again and will be able to select a new nail treatment or a new date and time. In this case, their appointment status will be pending again. If they delete their appointment, this will then be deleted from their 'My Account' page. 
+In the account page users get an overview of their user details and all of their booked appointments including status. The links to modify or cancel (delete) appointments work and will act accordingly. If they decide to modify an appointment, they will be redirected to the make-an-appointment form again and will be able to select a new nail treatment or a new date and time. In this case, their appointment status will be pending again. If they delete their appointment, this will then be deleted from their 'My Account' page. 
 
 ### Known Issues & Fixed Bugs
 
-- For my appointment form I have used a datepicker extension called flatpickr which allowed me to block weekends and past dates to be booked. I also wanted to build a system where only full hours could be booked (i.e. 12:00, 13:00, 14:00...etc.) however, this extension did not provide this feature. To go around this I set a default value to the time section and used css to dont display the up and down arrows from the timepicker. While that worked and inviduals now cannot move their minutes up and down with the error they can still type it out which is a know issue that needs fixing in the future.
+- For my appointment form I have used a datepicker extension called flatpickr which allowed me to block weekends and past dates to be booked. I also wanted to build a system where only full hours could be booked (i.e. 12:00, 13:00, 14:00...etc.) however, this extension did not provide this feature. To go around this I set a default value to the time section and used css to don’t display the up and down arrows from the timepicker. While that worked and now one cannot move their minutes up and down with the error they can still type it out which is a known issue that needs fixing in the future.
 - After my first deployment I has issues with my static files and their path to cloudinary where not correct to their cloudinary link. I eventually had to change the images files to the media folder and use the cloudinary link as background url to render the website hero image. 
 - During my last steps of updating my python code for long-line errors my STATICFILES_STORAGE variable from my settings file was too long so I had made it smaller just like with all other lines. However, this particular line breaking was preventing my build logs to succeed and therefore my application was not displaying even though the deployed website was already working before. After trying different ways to make the line smaller and not achieving the expected result, I have returned it to be in full so that the website would be deployed correctly.
 
@@ -277,7 +277,7 @@ The website was deployed using Heroku. My repository is build using the Code Ins
 
 For deployment, the following steps were taken:
 
-- On my gitpod workspace - Command Line:
+- On myGitpod workspace - Command Line:
 1. Install Django - `pip3 install Django==3.2 gunicorn`
 2. Install Django supporting libraries: Psycopg2 and Cloudinary `pip3 install dj_database_url psycopg2` | `pip3 install dj3-cloudinary-storage`
 3. Update requirements.txt file `pip3 freeze --local > requirements.txt`
@@ -295,28 +295,28 @@ For deployment, the following steps were taken:
 13. Set up DATABASE_URL and SECRET_KEY environment variables
 - On Heroku:
 14. Set SECRET_KEY value to Heroku's Config Vars under settings tab
-- On my gitpod workspace - Settings.py file:
+- On my Gitpod workspace - Settings.py file:
 15. Import os library and set up database to function on local environemt
 16. Add replacement SECRET_KEY value
 17. Comment out DATABASE = { } section
 18. Add new DATABASE section that links with Heroku's config var 
-- On my gitpod workspace - Command Line:
+- On my Gitpod workspace - Command Line:
 19. Save all files and make migrations `python3 manage.py migrate`
 - On my Cloudinary account:
 20. Copy my CLOUDINARY_URL from Dashboard
-- On my gitpod workspace - env.py file:
+- On my Gitpod workspace - env.py file:
 21. Add Cloudinary URL to env.py file
 - On Heroku:
 22. Add Cloudinary URL to Heroku Config Vars
 23. Add DISABLE_COLLECTSTATIC to Heroku Config Vars 
-- On my gitpod workspace - Settings.py file:
+- On my Gitpod workspace - Settings.py file:
 24. Add Cloudinary Libraries to installed apps
 25. Tell Django to use Cloudinary to store media and static files by setting up Static Files Storage variables
 26. Add Heroku Hostname to ALLOWED_HOSTS
-- On my gitpod workspace - Directory:
-27. Create procfile on the top level directory
+- On my Gitpod workspace - Directory:
+27. Create Procfile on the top level directory
 28. Add code to Procfile `web: gunicorn PROJ_NAME.wsgi`
-- On my gitpod workspace - Command Line:
+- On my Gitpod workspace - Command Line:
 29. Perform Git control and push changes to repository
 - On Heroku:
 30. Deploy it manually to Heroku using GitHub, using main branch 
