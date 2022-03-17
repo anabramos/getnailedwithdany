@@ -156,6 +156,8 @@ This website makes use of icons from Font Awesome to give a new visual element a
 
 <img src="media/documents/readme/make-appointment.PNG" style="width: 30%" />
 
+<img src="media/documents/readme/no-appointment.PNG" style="width: 30%" />
+
 ### My Account
 - In the my account section users are able to check their user details and their appointments for the future. They can also modify or cancel(delete) appointments completely. If they decide to modify an appointmet, they will be redirected to the make-an-appointment form again and will be able to select a new nail treatment or a new date and time. In this case, their appointment status will be pending again. If they delete their appointment, this will then be deleted from their 'My Account' page. 
 
@@ -169,6 +171,19 @@ This website makes use of icons from Font Awesome to give a new visual element a
 <img src="media/documents/readme/login.PNG" style="width: 30%" />
 
 <img src="media/documents/readme/logout.PNG" style="width: 30%" />
+
+### Admin panel
+- The admin site panel gives the business owner and overview of all instances of the models crreatd for this project. It dispays all registered users, their details, and allows admin owner to make chages or delete these. The appointments section also gives thebusiness owner an overview of existing appoinments listed per date and the possibility to modify or cancel these appointments. Most importantly: Here is where the business owner can change the status of each appoointment from pendig to confirmed or denied. Lastly, in the services section of the admin panel the business owner can see the services that are currently available in the website and change or ddelete these so that the list on the front-end is up to date.
+
+<img src="media/documents/readme/admin-django.PNG" style="width: 30%" />
+
+<img src="media/documents/readme/admin-users.PNG" style="width: 30%" />
+
+<img src="media/documents/readme/admin-bookings.PNG" style="width: 30%" />
+
+<img src="media/documents/readme/admin-services.PNG" style="width: 30%" />
+
+
 
 
 ## Technologies Used
