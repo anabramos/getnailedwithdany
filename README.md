@@ -186,11 +186,14 @@ This website makes use of icons from Font Awesome to give a new visual element a
 ## Testing
 
 ### Validation
-- HTML Code passed [W3C HTML Validation Service](https://validator.w3.org/) with one exception: the rendering of django forms as tables ({{form.as_table}}) states that non input field may be inserted as descendent from a tabkle field. For this reason the Validation is not fully accepted. 
 
-- CSS Code passed [W3C CSS Validation Service](https://validator.w3.org/) with no exceptions
+- HTML Code passed [W3C HTML Validation Service](https://validator.w3.org/) with one exception: the rendering of django forms as tables ({{form.as_table}}) states that non input field may be inserted as descendent from a table field. For this reason the Validation is not fully accepted. Yet, as this is a format that is rendered by django itself and I was not able to edit that part of the code without compromising the formatting of my forms I left. This is in this case a known issue. 
 
-- Javascript Code passed [JSHint validation](https://jshint.com/)
+- CSS Code passed [W3C CSS Validation Service](https://validator.w3.org/) with no errors
+
+- Javascript Code passed [JSHint validation](https://jshint.com/) with no errors
+
+- Python code passed [Pep8 validation](http://pep8online.com/) with no errors
 
 ## Technologies Used
 
